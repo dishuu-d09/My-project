@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Front Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            padding: 1rem 2rem;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            margin-left: 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1500x500') center/cover no-repeat;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem;
+            background: #fff;
+        }
+        .feature {
+            text-align: center;
+            max-width: 300px;
+        }
+        .feature h2 {
+            color: #007BFF;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Cinematic Blendz</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Cinematic Blendz</h1>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h2>Feature One</h2>
+            <p>This website is for video editing and VFX or CGI courses</p>
+        </div>
+        <div class="feature">
+            <h2>Feature Two</h2>
+            <p>This website is for video editing and VFX or CGI courses.</p>
+        </div>
+        <div class="feature">
+            <h2>Feature Three</h2>
+            <p>This website is for video editing and VFX or CGI courses</p>
+        </div>
+    </section>
+</body>
+</html>
